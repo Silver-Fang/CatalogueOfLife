@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="物种分类浏览器.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:物种分类浏览器"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <DataTemplate x:Key="分类阶元" x:DataType="local:Col分类阶元">
+            <TreeViewItem Content="{x:Bind Content}" ItemsSource="{x:Bind ItemsSource}"/>
+        </DataTemplate>
+    </Page.Resources>
+    <TreeView ItemTemplate="{StaticResource 分类阶元}">
+    </TreeView>
+</Page>
