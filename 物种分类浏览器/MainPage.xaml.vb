@@ -5,12 +5,12 @@
 ''' </summary>
 Public NotInheritable Class MainPage
     Inherits Page
-    Sub New()
 
-        ' 此调用是设计器所必需的。
-        InitializeComponent()
+    Private Sub MainPage_Loaded(sender As Object, e As RoutedEventArgs) Handles Me.Loaded
 
-        ' 在 InitializeComponent() 调用之后添加任何初始化。
+    End Sub
+
+    Private Async Sub 树视图_Expanding(sender As TreeView, args As TreeViewExpandingEventArgs) Handles 树视图.Expanding
 
     End Sub
 End Class
