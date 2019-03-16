@@ -131,12 +131,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Col分类阶元.vb" />
+    <Compile Include="Col集合属性.vb" />
     <Compile Include="Col物种.vb" />
     <Compile Include="Col节点.vb" />
     <Compile Include="MainPage.xaml.vb">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="Col简单属性.vb" />
+    <Compile Include="TreeViewItem.vb" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -223,6 +226,7 @@
     <Import Include="Windows.Foundation" />
     <Import Include="Windows.Foundation.Collections" />
     <Import Include="Windows.Graphics.Display" />
+    <Import Include="Windows.UI.Core" />
     <Import Include="Windows.UI.ViewManagement" />
     <Import Include="Windows.UI.Xaml" />
     <Import Include="Windows.UI.Xaml.Controls" />

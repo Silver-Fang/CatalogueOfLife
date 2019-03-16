@@ -10,21 +10,21 @@
     <Page.Resources>
         <local:Col分类阶元 x:Key="根"/>
     </Page.Resources>
-    <StackPanel>
+    <ScrollViewer>
+        <StackPanel>
         <ProgressBar IsIndeterminate="True" DataContext="{StaticResource 根}" Visibility="{Binding Path=Visibility, Mode=OneWay}" ShowPaused="{Binding Path=ShowPaused, Mode=OneWay}"/>
-        <TreeView x:Name="树视图" ItemsSource="{Binding Source={StaticResource 根}, Path=ItemsSource}">
+            <TreeView x:Name="树视图" ItemsSource="{Binding Source={StaticResource 根}, Path=ItemsSource, Mode=OneWay}">
             <TreeView.ItemTemplate>
-                <DataTemplate x:DataType="local:Col节点">
-                    <TreeViewNode HasUnrealizedChildren="{x:Bind HasUnrealizedChildren}" x:DefaultBindMode="OneWay">
-                        <TreeViewNode.Content>
-                            <StackPanel>
-                                <TextBlock Text="{x:Bind Text}"/>
+                <DataTemplate x:DataType="local:TreeViewItem">
+                    <TreeViewItem ItemsSource="{x:Bind ItemsSource}" HasUnrealizedChildren="{x:Bind HasUnrealizedChildren}" x:DefaultBindMode="OneWay">
+                        <StackPanel>
+                            <TextBlock Text="{x:Bind Text}"/>
                                 <ProgressBar IsIndeterminate="True" Visibility="{x:Bind Visibility}" ShowPaused="{x:Bind ShowPaused}" x:DefaultBindMode="OneWay"/>
                             </StackPanel>
-                        </TreeViewNode.Content>
-                    </TreeViewNode>
+                    </TreeViewItem>
                 </DataTemplate>
             </TreeView.ItemTemplate>
         </TreeView>
     </StackPanel>
+    </ScrollViewer>
 </Page>
