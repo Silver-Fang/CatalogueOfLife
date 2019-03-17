@@ -4,7 +4,6 @@
     xmlns:local="using:物种分类浏览器"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:Custom="using:Microsoft.Toolkit.Uwp.UI.Controls"
     x:Class="物种分类浏览器.MainPage"
     mc:Ignorable="d">
     <Page.Resources>
