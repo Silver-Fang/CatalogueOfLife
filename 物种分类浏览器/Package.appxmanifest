@@ -7,15 +7,15 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="e403a60c-5e4e-40a7-943b-acda05594646"
-    Publisher="CN=zhang"
+    Name="642671AC6A72D.6044339E82BBF"
+    Publisher="CN=C6ECC887-0CE3-4397-A2DB-DD8D66347822"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="e403a60c-5e4e-40a7-943b-acda05594646" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="77771921-2735-4790-a38b-0419bb881e4c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>物种分类浏览器</DisplayName>
-    <PublisherDisplayName>zhang</PublisherDisplayName>
+    <PublisherDisplayName>强盗鼠</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
